@@ -2,3 +2,45 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+
+.app {
+  display: flex;
+  height: 100vh;
+  background: #020230;
+  color: #fff2ff;
+}
+.main {
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
+    url("./assets/kbc-bg.jpg") center;
+}
+.pyramid {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+.moneyListItem.active {
+  background-color: #059191;
+  padding: 5px;
+  border-radius: 5px;
+}
+.moneyListNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+.moneyListAmount {
+  font-size: 20px;
+  font-weight: 300;
+}
