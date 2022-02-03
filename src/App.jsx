@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -19,16 +20,24 @@ function App() {
     {id:15, amount: "$ 1000000"},
   ].reverse();
 
+  const [questionNumber, setQuestionNumber] = useState(1);
   return (
     <div className="app">
       <div className="main">
-        quiz
+        <div className="top">
+          <div className="timer">
+            30
+          </div>
+        </div>
+        <div className="bottom">
+          Question & answers
+        </div>
       </div>
       <div className="pyramid">
         <ul className="moneyList">
         {
           moneyPyramid.map((m) => (
-            <li className="moneyListItem">
+            <li className={questionNumber == m.id ? 'moneyListItem active' : 'moneyListItem'}>
               <span className="moneyListNumber">
                 {m.id}
               </span>
