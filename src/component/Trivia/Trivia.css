@@ -34,3 +34,51 @@
   margin: 0 10px 20px 10px;
   padding: 10px;
 }
+.answer:hover,
+.answer.active {
+  background: rgb(0, 0, 205);
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: rgba(0, 0, 205);
+  }
+
+  20%,
+  40% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+
+  62%,
+  100% {
+    background: rgb(0, 128, 0);
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: rgba(0, 0, 205);
+  }
+
+  20%,
+  40% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+
+  62%,
+  100% {
+    background: rgb(236, 1, 1);
+  }
+}
