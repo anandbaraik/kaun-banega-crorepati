@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Trivia from './component/Trivia/Trivia';
 
 function App() {
   const moneyPyramid = [
@@ -30,7 +31,7 @@ function App() {
           </div>
         </div>
         <div className="bottom">
-          Question & answers
+          <Trivia/>
         </div>
       </div>
       <div className="pyramid">

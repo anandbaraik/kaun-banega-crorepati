@@ -1,0 +1,36 @@
+.trivia {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.question {
+  width: 80%;
+  background: linear-gradient(#100241, black);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff7ff;
+  text-align: center;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.answer {
+  width: 40%;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22047d);
+  border: 1px solid #fff7ff;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 300;
+  margin: 0 10px 20px 10px;
+  padding: 10px;
+}
