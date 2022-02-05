@@ -1,26 +1,35 @@
 import "./Trivia.css";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-export default function Trivia() {
-  return (
-    <div className="trivia">
-        <div className="question">
-            What's the capital of india?
+export default function Trivia({
+        questions,
+        setStop,
+        setQuestionNumber,
+        questionNumber
+    }) {
+    const [question, setQuestion] = useState(null);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    useEffect(() => {
+        setQuestion(questions[questionNumber - 1]);
+    }, [questions, questionNumber]);
+
+    console.log(question);
+
+    return (
+        <div className="trivia">
+            <div className="question">
+                {question?.question}
+            </div>
+            <div className="answers">
+            {
+                question?.answers.map((a) => (
+                    <div className="answer"
+                        key={a.text}>
+                        {a.text}
+                    </div>
+                ))
+            }
+            </div>
         </div>
-        <div className="answers">
-            <div className="answer">
-                Delhi
-            </div>
-            <div className="answer">
-                Kolkata
-            </div>
-            <div className="answer">
-                Mumbai
-            </div>
-            <div className="answer">
-                Banglore
-            </div>
-        </div>
-    </div>
-  );
+    );
 }
