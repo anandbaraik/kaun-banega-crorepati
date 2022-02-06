@@ -9,11 +9,18 @@ export default function Trivia({
     }) {
     const [question, setQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [className, setClassName] = useState("answer");
     useEffect(() => {
         setQuestion(questions[questionNumber - 1]);
     }, [questions, questionNumber]);
 
-    console.log(question);
+    const handleClickHandler = (ans) => {
+        setSelectedAnswer(ans);
+        setClassName("answer active");
+        setTimeout(() => {
+            setClassName(ans.correct ? 'answer correct' : 'answer wrong');
+        }, 3000);
+    }
 
     return (
         <div className="trivia">
@@ -23,8 +30,10 @@ export default function Trivia({
             <div className="answers">
             {
                 question?.answers.map((a) => (
-                    <div className="answer"
-                        key={a.text}>
+                    <div className={selectedAnswer === a ? className : 'answer'}
+                        key={a.text}
+                        onClick={() => handleClickHandler(a)}
+                        >
                         {a.text}
                     </div>
                 ))
