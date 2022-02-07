@@ -10,16 +10,32 @@ export default function Trivia({
     const [question, setQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [className, setClassName] = useState("answer");
+
     useEffect(() => {
         setQuestion(questions[questionNumber - 1]);
     }, [questions, questionNumber]);
 
+    const delay = (duration, callback) => {
+        setTimeout(() => {
+            callback();
+        }, duration);
+    }
+
     const handleClickHandler = (ans) => {
         setSelectedAnswer(ans);
         setClassName("answer active");
-        setTimeout(() => {
+        delay(3000, () => {
             setClassName(ans.correct ? 'answer correct' : 'answer wrong');
-        }, 3000);
+        });
+
+        delay(6000, () => {
+            if(ans.correct){
+                setQuestionNumber((prev) => prev + 1);
+                setSelectedAnswer(null);
+            } else {
+                setStop(true);
+            }
+        });
     }
 
     return (
