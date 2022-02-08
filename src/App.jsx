@@ -143,7 +143,7 @@ function App() {
           }
           </ul>
         </div>
-      </>) : <Start setUserName="setUserName"></Start>
+      </>) : <Start setUserName={setUserName}></Start>
       }
     </div>
   );
