@@ -32,6 +32,11 @@ export default function Trivia({
         }, duration);
     }
 
+    const isLastQuestion = () => {
+        const lastQuestion = questions[questions.length - 1];
+        return question === lastQuestion;
+    }
+
     const handleClickHandler = (ans) => {
         setSelectedAnswer(ans);
         setClassName("answer active");
@@ -46,6 +51,9 @@ export default function Trivia({
                 delay(1000, () => {
                     setQuestionNumber((prev) => prev + 1);
                     setSelectedAnswer(null);
+                    if(isLastQuestion()) {
+                        setStop(true);
+                    }
                 });
             } else {
                 wrongAnswer();

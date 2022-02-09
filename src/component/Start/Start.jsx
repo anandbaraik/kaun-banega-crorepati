@@ -10,6 +10,7 @@ export default function Start({setUserName}) {
         <input className="input"
             placeholder="Enter your name"
             ref={userNameRef}
+            autoFocus
             />
         <button type="button" role="button"
             className="start_btn"

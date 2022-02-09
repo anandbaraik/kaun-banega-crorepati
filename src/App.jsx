@@ -109,7 +109,7 @@ function App() {
     {userName ? (
       <>
         <div className="main">
-          { stop ? <h1 className="trivia-end">You Earned {earned}</h1> : (
+          { stop ? <h1 className="trivia-end">{userName}, You Earned {earned}</h1> : (
             <>
               <div className="top">
                 <div className="timer">
