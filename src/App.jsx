@@ -82,6 +82,28 @@ function App() {
     },
     {
       id: 3,
+      question: "Bold, Italic, Regular are known as",
+      answers: [
+        {
+          text: "Text Effects",
+          correct: false,
+        },
+        {
+          text: "Font Effects",
+          correct: false,
+        },
+        {
+          text: "Word Art",
+          correct: false,
+        },
+        {
+          text: "Font Styles",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 4,
       question: "Who played the character of harry potter in movie?",
       answers: [
         {
@@ -102,6 +124,248 @@ function App() {
         },
       ],
     },
+    {
+      id: 5,
+      question: "Bahubali festival is related to",
+      answers: [
+        {
+          text: "Jainism",
+          correct: true,
+        },
+        {
+          text: "Islam",
+          correct: false,
+        },
+        {
+          text: "Hinduism",
+          correct: false,
+        },
+        {
+          text: "Buddhism",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      question: "The Betla National Park is located at?",
+      answers: [
+        {
+          text: "Uttarakhand",
+          correct: false,
+        },
+        {
+          text: "Jharkhand",
+          correct: true,
+        },
+        {
+          text: "Kerala",
+          correct: false,
+        },
+        {
+          text: "Punjab",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 7,
+      question: "The Yarlung Zangbo river, in India, is known as",
+      answers: [
+        {
+          text: "Ganga",
+          correct: false,
+        },
+        {
+          text: "Indus",
+          correct: false,
+        },
+        {
+          text: "Brahmaputra",
+          correct: true,
+        },
+        {
+          text: "Mahanadi",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 8,
+      question: "Which of the following is a peninsular river of India?",
+      answers: [
+        {
+          text: "Gandak",
+          correct: false,
+        },
+        {
+          text: "Kosi",
+          correct: false,
+        },
+        {
+          text: "Sutlej",
+          correct: false,
+        },
+        {
+          text: "Krishna",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 9,
+      question: "Portrait and Landscape are",
+      answers: [
+        {
+          text: "Page notations",
+          correct: false,
+        },
+        {
+          text: "Page orientations",
+          correct: true,
+        },
+        {
+          text: "Page layout",
+          correct: false,
+        },
+        {
+          text: "Page size",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      question: "The Battle of Plassey was fought in",
+      answers: [
+        {
+          text: "1757",
+          correct: true,
+        },
+        {
+          text: "1782",
+          correct: false,
+        },
+        {
+          text: "1748",
+          correct: false,
+        },
+        {
+          text: "1764",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 11,
+      question: "To which king belongs the Lion capital at Sarnath?",
+      answers: [
+        {
+          text: "Chandragupta",
+          correct: false,
+        },
+        {
+          text: "Ashoka",
+          correct: true,
+        },
+        {
+          text: "Kanishka",
+          correct: false,
+        },
+        {
+          text: "Harsha",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 12,
+      question: "Ctrl, Shift and Alt are called .... keys.",
+      answers: [
+        {
+          text: "Modifier",
+          correct: true,
+        },
+        {
+          text: "Function",
+          correct: false,
+        },
+        {
+          text: "Alphanumeric",
+          correct: false,
+        },
+        {
+          text: "Adjustment",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 13,
+      question: "Where is RAM located?",
+      answers: [
+        {
+          text: "Compiler",
+          correct: false,
+        },
+        {
+          text: "External Drive",
+          correct: false,
+        },
+        {
+          text: "Expansion Board",
+          correct: false,
+        },
+        {
+          text: "Mother Board",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 14,
+      question: "The language of Lakshadweep, a Union Territory of India, is",
+      answers: [
+        {
+          text: "Tamil",
+          correct: false,
+        },
+        {
+          text: "Hindi",
+          correct: false,
+        },
+        {
+          text: "Malayalam",
+          correct: true,
+        },
+        {
+          text: "Telugu",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 15,
+      question: "A computer cannot `boot` if it does not have the__",
+      answers: [
+        {
+          text: "Compiler",
+          correct: false,
+        },
+        {
+          text: "Loader",
+          correct: false,
+        },
+        {
+          text: "Operating system",
+          correct: true,
+        },
+        {
+          text: "Assembler",
+          correct: false,
+        },
+      ],
+    }
   ];
 
   return (
