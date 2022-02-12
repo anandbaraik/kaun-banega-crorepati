@@ -3,6 +3,7 @@ import './App.css';
 import Trivia from './component/Trivia/Trivia';
 import Timer from './component/Timer/Timer';
 import Start from './component/Start/Start';
+import Finish from './component/Finish/Finish';
 
 function App() {
 
@@ -373,7 +374,7 @@ function App() {
     {userName ? (
       <>
         <div className="main">
-          { stop ? <h1 className="trivia-end">{userName}, You Earned {earned}</h1> : (
+          { stop ? <Finish setStop={setStop} earned={earned} userName={userName}></Finish> : (
             <>
               <div className="top">
                 <div className="timer">
