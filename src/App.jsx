@@ -374,7 +374,7 @@ function App() {
     {userName ? (
       <>
         <div className="main">
-          { stop ? <Finish setStop={setStop} earned={earned} userName={userName}></Finish> : (
+          { stop ? <Finish stop={stop} setStop={setStop} earned={earned} userName={userName}></Finish> : (
             <>
               <div className="top">
                 <div className="timer">
