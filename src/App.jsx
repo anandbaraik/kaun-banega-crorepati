@@ -410,6 +410,10 @@ function App() {
         </div>
       </>) : <Start setUserName={setUserName}></Start>
       }
+      <a target="_blank" className="author" href="https://twitter.com/baraik_anand">
+        <img src="https://pbs.twimg.com/profile_images/1296817987920396289/aDAUAvaZ_400x400.jpg"/>
+          <p>By Anand 😊</p>
+      </a>
     </div>
   );
 }
