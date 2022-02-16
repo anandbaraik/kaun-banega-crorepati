@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kaun-banega-crorepati/static/css/main.6f38b140.css",
+    "main.css": "/kaun-banega-crorepati/static/css/main.02e0ffe4.css",
     "main.js": "/kaun-banega-crorepati/static/js/main.c16dbd0b.js",
     "static/js/845.0eafcafe.chunk.js": "/kaun-banega-crorepati/static/js/845.0eafcafe.chunk.js",
     "static/media/kbc-bg.jpg": "/kaun-banega-crorepati/static/media/kbc-bg.c137ccd722d64133b4df.jpg",
@@ -8,12 +8,12 @@
     "static/media/correct.mp3": "/kaun-banega-crorepati/static/media/correct.160572d72c858155072e.mp3",
     "static/media/wrong.mp3": "/kaun-banega-crorepati/static/media/wrong.e946821894ae9b0a0d6f.mp3",
     "index.html": "/kaun-banega-crorepati/index.html",
-    "main.6f38b140.css.map": "/kaun-banega-crorepati/static/css/main.6f38b140.css.map",
+    "main.02e0ffe4.css.map": "/kaun-banega-crorepati/static/css/main.02e0ffe4.css.map",
     "main.c16dbd0b.js.map": "/kaun-banega-crorepati/static/js/main.c16dbd0b.js.map",
     "845.0eafcafe.chunk.js.map": "/kaun-banega-crorepati/static/js/845.0eafcafe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f38b140.css",
+    "static/css/main.02e0ffe4.css",
     "static/js/main.c16dbd0b.js"
   ]
 }
